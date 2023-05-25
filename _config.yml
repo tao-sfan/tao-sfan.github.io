@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Sifan Tao"
 title_separator          : "-"
 name                     : &name "Sifan Tao"
-description              : &description "Undergraduate Student at University of Virginia"
+description              : &description "Ph.D. Student in Statistics at University of Wisconsin - Madison"
 url                      : https://tao-sfan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "tao-sfan/tao-sfan.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Sifan Tao"
   avatar           : "profile.png"
-  bio              : "Undergraduate Student at University of Virginia"
-  location         : "Charlottesville, VA, USA"
+  bio              : "Ph.D. Student in Statistics at University of Wisconsin - Madison"
+  location         : "Madison, WI, USA"
   employer         :
   pubmed           : 
   googlescholar    : 
