@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-I am an undergaduate student at University of Virginia studying statistics and mathematics. I am an incoming Ph.D. stident in Statistics at University of Wisconsin-Madison in fall 2023. Currently, my research interest includes causal inference, sports analytics, statistical modeling and statistical machine learning. I am also open to other topics in statistics.
+I am an Ph.D. stident in Statistics at University of Wisconsin-Madison. I received my bachelor's degree in statistics from University of Virginia in Spring 2023. Currently, my research interest includes causal inference, sports analytics, statistical modeling and statistical machine learning. I am also open to other topics in statistics.
 
 My CV is available [here](https://tao-sfan.github.io/files/cv_tao.pdf).
