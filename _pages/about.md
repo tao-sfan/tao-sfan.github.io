@@ -8,6 +8,7 @@ redirect_from:
   - /about.html
 ---
 
+
 I am a Ph.D. student in Statistics at University of Wisconsin-Madison. I received my bachelor's degree in statistics from University of Virginia in Spring 2023. My current research interst includes: computer experiments, design of experiments, and uncertainty quantification.
 
 Currently, I'm working with Professor [Peter Chien](https://mendota.cdis.wisc.edu/index.html).
