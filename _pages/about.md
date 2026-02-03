@@ -13,6 +13,8 @@ I am a Ph.D. student in Statistics at University of Wisconsin-Madison. I receive
 
 Currently, I'm working with Professor [Peter Chien](https://mendota.cdis.wisc.edu/index.html).
 
+I will join Capital One as a data scientist intern in June 2026.
+
 My CV is available [here](https://tao-sfan.github.io/files/cv_tao.pdf).
 
-I will join Capital One as a data scientist intern in June 2026.
+
