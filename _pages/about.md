@@ -99,7 +99,7 @@ redirect_from:
         </div>
         <div class="publication-item__body">
           <h3>Spatiotemporal Origin and Dynamics of Sodium Plating in Sodium-Ion Batteries</h3>
-          <p>Qianxi Xing, Ziqi Yang, <strong>Sifan Tao</strong>, and Fang Liu</p>
+          <p>Ziqi Yang, <strong>Sifan Tao</strong>, Qianli Xing, and Fang Liu</p>
         </div>
       </article>
 
