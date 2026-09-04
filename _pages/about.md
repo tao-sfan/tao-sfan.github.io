@@ -151,8 +151,8 @@ redirect_from:
           </li>
           <li>
             <p class="home-timeline__date">2019 to 2023</p>
-            <h4>B.S. in Statistics, second major in Mathematics</h4>
-            <p>University of Virginia, with distinction and Phi Beta Kappa</p>
+            <h4>B.S. in Statistics</h4>
+            <p>University of Virginia</p>
           </li>
           <li>
             <p class="home-timeline__date">Fall 2020</p>
