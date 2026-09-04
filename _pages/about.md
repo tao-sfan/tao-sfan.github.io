@@ -127,7 +127,6 @@ redirect_from:
       </article>
     </div>
 
-    <p class="home-inline-link"><a href="/files/cv_tao.pdf">View the complete CV <span aria-hidden="true">&#8594;</span></a></p>
   </div>
 </section>
 
