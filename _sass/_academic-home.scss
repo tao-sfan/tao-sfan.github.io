@@ -304,9 +304,9 @@ html {
 
 .home-hero__facts {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.2rem;
-  max-width: 34rem;
+  max-width: 18rem;
   margin: 2.8rem 0 0;
   padding-top: 1.35rem;
   border-top: 1px solid var(--home-line);
@@ -363,21 +363,6 @@ html {
     object-fit: cover;
     object-position: 50% 75%;
   }
-}
-
-.home-portrait figcaption {
-  position: absolute;
-  right: 1.2rem;
-  bottom: 0.55rem;
-  left: 3.5rem;
-  display: flex;
-  justify-content: space-between;
-  color: rgba(255, 255, 255, 0.82);
-  font-family: var(--home-sans);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 .home-section {
@@ -910,10 +895,6 @@ html {
     }
   }
 
-  .home-hero__facts {
-    grid-template-columns: 1fr;
-  }
-
   .home-portrait {
     padding: 0 0 1.8rem 1.3rem;
 
@@ -921,10 +902,6 @@ html {
       width: calc(100% - 1.3rem);
       height: calc(100% - 1.8rem);
     }
-  }
-
-  .home-portrait figcaption {
-    left: 2.1rem;
   }
 
   .home-contact__email {

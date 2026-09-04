@@ -27,10 +27,6 @@ redirect_from:
           <dt>Based in</dt>
           <dd>Madison, Wisconsin</dd>
         </div>
-        <div>
-          <dt>Current role</dt>
-          <dd>Graduate Research Assistant</dd>
-        </div>
       </dl>
     </div>
 
@@ -38,10 +34,6 @@ redirect_from:
       <div class="home-portrait__frame">
         <img src="/images/profile.png" alt="Sifan Tao overlooking a winter cityscape" width="3024" height="4032" fetchpriority="high">
       </div>
-      <figcaption>
-        <span>Researcher in statistics</span>
-        <span>UW-Madison</span>
-      </figcaption>
     </figure>
   </div>
 </section>
@@ -97,6 +89,17 @@ redirect_from:
           <h3>Group representative Latin hypercube design</h3>
           <p><strong>Sifan Tao</strong> and Peter Chien</p>
           <p class="publication-venue"><a href="https://epubs.siam.org/journal/sjuqa3">SIAM/ASA Journal on Uncertainty Quantification</a></p>
+        </div>
+      </article>
+
+      <article class="publication-item">
+        <div class="publication-item__meta">
+          <span class="publication-status">Submitted</span>
+          <span>Manuscript</span>
+        </div>
+        <div class="publication-item__body">
+          <h3>Spatiotemporal Origin and Dynamics of Sodium Plating in Sodium-Ion Batteries</h3>
+          <p>Qianxi Xing, Ziqi Yang, <strong>Sifan Tao</strong>, and Fang Liu</p>
         </div>
       </article>
 
@@ -164,19 +167,9 @@ redirect_from:
         <h3>Recent experience</h3>
         <ol class="home-timeline">
           <li>
-            <p class="home-timeline__date">2024 to present</p>
-            <h4>Graduate Research Assistant</h4>
-            <p>University of Wisconsin-Madison</p>
-          </li>
-          <li>
             <p class="home-timeline__date">Summer 2026</p>
             <h4>Data Science Ph.D. Intern</h4>
             <p>Capital One, Upmarket Acquisition Behavioral</p>
-          </li>
-          <li>
-            <p class="home-timeline__date">2023 to present</p>
-            <h4>Teaching Assistant</h4>
-            <p>Statistics and data science courses at UW-Madison</p>
           </li>
         </ol>
       </div>
