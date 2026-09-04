@@ -426,18 +426,66 @@ html {
   background: var(--home-mist);
 }
 
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.research-carousel {
+  --research-carousel-columns: 3;
+}
+
+.research-carousel__stage {
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+    bottom: 1px;
+    width: 2px;
+    background: var(--home-mist);
+    content: "";
+    pointer-events: none;
+  }
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+}
+
+.research-carousel__viewport {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
   border-top: 1px solid var(--home-line);
   border-bottom: 1px solid var(--home-line);
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--home-red);
+    outline-offset: 4px;
+  }
+}
+
+.research-grid {
+  display: flex;
+  min-width: 0;
 }
 
 .research-card {
   position: relative;
+  flex: 0 0 calc(100% / var(--research-carousel-columns));
   min-height: 18rem;
   padding: 2rem 2.25rem 2.5rem;
   border-right: 1px solid var(--home-line);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 
   &:last-child {
     border-right: 0;
@@ -459,7 +507,7 @@ html {
   }
 
   h3 {
-    max-width: 12ch;
+    max-width: 18ch;
     margin: 2rem 0 1.25rem;
     color: var(--home-ink);
     font-family: var(--home-display);
@@ -474,6 +522,107 @@ html {
     font-size: 0.94rem;
     line-height: 1.7;
   }
+}
+
+.research-carousel__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  margin-top: 1.2rem;
+}
+
+.research-carousel:not(.is-enhanced) .research-carousel__controls,
+.research-carousel:not(.is-enhanced) .research-carousel__button,
+.research-carousel:not(.is-scrollable) .research-carousel__controls,
+.research-carousel:not(.is-scrollable) .research-carousel__button {
+  display: none;
+}
+
+.research-carousel__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.research-carousel__dot {
+  position: relative;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.48rem;
+    height: 0.48rem;
+    background: #aebdc5;
+    border-radius: 50%;
+    content: "";
+    transform: translate(-50%, -50%);
+    transition: background-color 180ms ease, transform 180ms ease;
+  }
+
+  &[aria-current="true"]:before {
+    background: var(--home-ink);
+    transform: translate(-50%, -50%) scale(1.28);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--home-red);
+    outline-offset: -0.15rem;
+  }
+}
+
+.research-carousel__button {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 4rem;
+  padding: 0;
+  color: var(--home-ink);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: color 180ms ease, opacity 180ms ease;
+
+  span {
+    font-size: 1.55rem;
+    line-height: 1;
+  }
+
+  &:hover:not(:disabled) {
+    color: var(--home-red);
+  }
+
+  &:focus-visible {
+    color: var(--home-red);
+    outline: 2px solid var(--home-red);
+    outline-offset: -0.15rem;
+  }
+
+  &:disabled {
+    opacity: 0.24;
+    cursor: default;
+  }
+}
+
+.research-carousel__button--previous {
+  left: -1.5rem;
+}
+
+.research-carousel__button--next {
+  right: -1.5rem;
 }
 
 .home-section--publications {
@@ -767,22 +916,15 @@ html {
     }
   }
 
-  .research-grid {
-    grid-template-columns: 1fr;
+  .research-carousel {
+    --research-carousel-columns: 2;
   }
 
   .research-card {
-    min-height: 0;
-    border-right: 0;
-    border-bottom: 1px solid var(--home-line);
-
-    &:last-child {
-      border-bottom: 0;
-    }
+    min-height: 17rem;
 
     h3 {
-      max-width: none;
-      margin-top: 2.5rem;
+      margin-top: 2rem;
     }
   }
 }
@@ -844,6 +986,30 @@ html {
 
     h2 {
       font-size: clamp(2.35rem, 12vw, 3.6rem);
+    }
+  }
+
+  .research-carousel {
+    --research-carousel-columns: 1;
+  }
+
+  .research-carousel__button {
+    width: 2rem;
+  }
+
+  .research-carousel__button--previous {
+    left: -1rem;
+  }
+
+  .research-carousel__button--next {
+    right: -1rem;
+  }
+
+  .research-card {
+    min-height: 16rem;
+
+    h3 {
+      max-width: 18ch;
     }
   }
 
@@ -909,8 +1075,15 @@ html {
 
   .home-button,
   .home-button span,
+  .research-carousel__button,
+  .research-carousel__dot:before,
+  .research-carousel__viewport,
   .research-card:before,
   .skip-link {
     transition: none;
+  }
+
+  .research-carousel__viewport {
+    scroll-behavior: auto;
   }
 }

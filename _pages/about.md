@@ -49,19 +49,37 @@ redirect_from:
       <p class="home-section__lead">My work sits at the intersection of experimental design, statistical computation, and uncertainty quantification.</p>
     </div>
 
-    <div class="research-grid">
-      <article class="research-card">
-        <h3>Robust experimental design</h3>
-        <p>Constructing space-filling designs that remain informative when portions of the input space produce failed or unusable runs.</p>
-      </article>
-      <article class="research-card">
-        <h3>Multi-model data fusion</h3>
-        <p>Coordinating overlapping sliced Latin hypercube designs so information from multiple computer models can be combined efficiently.</p>
-      </article>
-      <article class="research-card">
-        <h3>Grouped-variable designs</h3>
-        <p>Developing Latin hypercube designs that exploit grouped-variable structure for efficient sampling and variance reduction.</p>
-      </article>
+    <div class="research-carousel" data-research-carousel>
+      <div class="research-carousel__stage">
+        <div class="research-carousel__viewport" data-carousel-viewport tabindex="0" aria-label="Research areas carousel">
+          <div class="research-grid" data-carousel-track>
+            <article class="research-card">
+              <h3>Robust experimental design</h3>
+              <p>Constructing space-filling designs that remain informative when portions of the input space produce failed or unusable runs.</p>
+            </article>
+            <article class="research-card">
+              <h3>Multi-model data fusion</h3>
+              <p>Coordinating overlapping sliced Latin hypercube designs so information from multiple computer models can be combined efficiently.</p>
+            </article>
+            <article class="research-card">
+              <h3>Grouped-variable designs</h3>
+              <p>Developing Latin hypercube designs that exploit grouped-variable structure for efficient sampling and variance reduction.</p>
+            </article>
+          </div>
+        </div>
+
+        <button class="research-carousel__button research-carousel__button--previous" type="button" data-carousel-prev aria-label="Show previous research areas">
+          <span aria-hidden="true">&#8592;</span>
+        </button>
+        <button class="research-carousel__button research-carousel__button--next" type="button" data-carousel-next aria-label="Show next research areas">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+      </div>
+
+      <div class="research-carousel__controls">
+        <p class="visually-hidden" data-carousel-status aria-live="polite"></p>
+        <div class="research-carousel__pagination" data-carousel-pagination aria-label="Choose carousel position"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -126,6 +144,8 @@ redirect_from:
 
   </div>
 </section>
+
+<script src="{{ '/assets/js/research-carousel.js' | relative_url }}" defer></script>
 
 <section class="home-section home-section--background" id="background" aria-labelledby="background-title">
   <div class="home-shell">
