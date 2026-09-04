@@ -211,10 +211,10 @@ html {
     position: relative;
   }
 
-  span + span:before {
+  span:not(:last-child):after {
     position: absolute;
     top: 50%;
-    left: -0.75rem;
+    right: -0.75rem;
     width: 0.22rem;
     height: 0.22rem;
     background: var(--home-red);
@@ -747,14 +747,6 @@ html {
   font-size: 0.72rem;
 }
 
-@media (max-width: 1100px) and (min-width: 721px) {
-  .home-kicker {
-    flex-wrap: nowrap;
-    width: calc(100vw - 3rem);
-    white-space: nowrap;
-  }
-}
-
 @media (max-width: 900px) {
   .home-hero {
     min-height: auto;
@@ -842,20 +834,6 @@ html {
     font-size: clamp(4rem, 22vw, 6rem);
   }
 
-  .home-kicker {
-    flex-wrap: nowrap;
-    gap: 0.45rem 0.6rem;
-    font-size: clamp(0.68rem, 2.2vw, 0.77rem);
-    letter-spacing: 0.04em;
-    white-space: nowrap;
-
-    span + span:before {
-      left: -0.39rem;
-      width: 0.18rem;
-      height: 0.18rem;
-    }
-  }
-
   .home-portrait {
     max-width: 31rem;
     margin: 0 auto;
@@ -911,11 +889,8 @@ html {
   .home-kicker {
     display: grid;
     gap: 0.4rem;
-    font-size: 0.77rem;
-    letter-spacing: 0.13em;
-    white-space: normal;
 
-    span + span:before {
+    span:not(:last-child):after {
       display: none;
     }
   }
