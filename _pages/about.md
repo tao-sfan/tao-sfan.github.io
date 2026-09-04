@@ -51,19 +51,16 @@ redirect_from:
 
     <div class="research-grid">
       <article class="research-card">
-        <p class="research-card__index">A</p>
         <h3>Robust experimental design</h3>
         <p>Constructing space-filling designs that remain informative when portions of the input space produce failed or unusable runs.</p>
       </article>
       <article class="research-card">
-        <p class="research-card__index">B</p>
         <h3>Multi-model data fusion</h3>
         <p>Coordinating overlapping sliced Latin hypercube designs so information from multiple computer models can be combined efficiently.</p>
       </article>
       <article class="research-card">
-        <p class="research-card__index">C</p>
-        <h3>Uncertainty quantification</h3>
-        <p>Studying variance reduction and grouped-variable structure in Sobol models for complex physical systems.</p>
+        <h3>Grouped-variable designs</h3>
+        <p>Developing Latin hypercube designs that exploit grouped-variable structure for efficient sampling and variance reduction.</p>
       </article>
     </div>
   </div>
@@ -82,7 +79,7 @@ redirect_from:
     <div class="publication-list">
       <article class="publication-item">
         <div class="publication-item__meta">
-          <span class="publication-status publication-status--forthcoming">Forthcoming</span>
+          <span class="publication-status publication-status--to-appear">To appear</span>
           <span>Journal article</span>
         </div>
         <div class="publication-item__body">
@@ -188,7 +185,6 @@ redirect_from:
       <div class="home-contact__links">
         <a href="https://github.com/tao-sfan">GitHub</a>
         <a href="https://twitter.com/sfan_tao">X / Twitter</a>
-        <a href="/files/cv_tao.pdf">Curriculum vitae</a>
       </div>
     </div>
   </div>

@@ -435,7 +435,7 @@ html {
 
 .research-card {
   position: relative;
-  min-height: 20rem;
+  min-height: 18rem;
   padding: 2rem 2.25rem 2.5rem;
   border-right: 1px solid var(--home-line);
 
@@ -460,7 +460,7 @@ html {
 
   h3 {
     max-width: 12ch;
-    margin: 5.5rem 0 1.25rem;
+    margin: 2rem 0 1.25rem;
     color: var(--home-ink);
     font-family: var(--home-display);
     font-size: 1.65rem;
@@ -474,13 +474,6 @@ html {
     font-size: 0.94rem;
     line-height: 1.7;
   }
-}
-
-.research-card__index {
-  margin: 0;
-  color: var(--home-red);
-  font-family: var(--home-display);
-  font-size: 1rem;
 }
 
 .home-section--publications {
@@ -520,7 +513,7 @@ html {
   letter-spacing: 0.06em;
 }
 
-.publication-status--forthcoming {
+.publication-status--to-appear {
   color: #8d1021;
   background: #f6dfe3;
 }
