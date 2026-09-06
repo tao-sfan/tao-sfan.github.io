@@ -101,7 +101,7 @@ redirect_from:
           <span>Journal article</span>
         </div>
         <div class="publication-item__body">
-          <h3>Group representative Latin hypercube design</h3>
+          <h3>Group Representative Latin Hypercube Design</h3>
           <p><strong>Sifan Tao</strong> and Peter Chien</p>
           <p class="publication-venue"><a href="https://epubs.siam.org/journal/sjuqa3">SIAM/ASA Journal on Uncertainty Quantification</a></p>
         </div>
@@ -135,7 +135,7 @@ redirect_from:
           <span>Manuscript</span>
         </div>
         <div class="publication-item__body">
-          <h3>Overlapping sliced Latin hypercube designs for fusing multiple computer models</h3>
+          <h3>Overlapping Sliced Latin Hypercube Designs for Fusing Multiple Computer Models</h3>
           <p>Xiaoyu Lei*, <strong>Sifan Tao*</strong>, Peter Chien, and Joshua Cape</p>
           <p class="publication-note">* Equal contribution</p>
         </div>
