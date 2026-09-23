@@ -96,48 +96,44 @@ redirect_from:
 
     <div class="publication-list">
       <article class="publication-item">
-        <div class="publication-item__meta">
-          <span class="publication-status publication-status--to-appear">To appear</span>
-          <span>Journal article</span>
-        </div>
         <div class="publication-item__body">
           <h3>Group Representative Latin Hypercube Design</h3>
           <p><strong>Sifan Tao</strong> and Peter Chien</p>
           <p class="publication-venue"><a href="https://epubs.siam.org/journal/sjuqa3">SIAM/ASA Journal on Uncertainty Quantification</a></p>
         </div>
+        <div class="publication-item__meta">
+          <span class="publication-status publication-status--to-appear">To appear</span>
+        </div>
       </article>
 
       <article class="publication-item">
-        <div class="publication-item__meta">
-          <span class="publication-status">Submitted</span>
-          <span>Manuscript</span>
-        </div>
         <div class="publication-item__body">
           <h3>Spatiotemporal Origin and Dynamics of Sodium Plating in Sodium-Ion Batteries</h3>
           <p>Ziqi Yang, <strong>Sifan Tao</strong>, Qianli Xing, and Fang Liu</p>
         </div>
+        <div class="publication-item__meta">
+          <span class="publication-status">Submitted</span>
+        </div>
       </article>
 
       <article class="publication-item">
-        <div class="publication-item__meta">
-          <span class="publication-status">Submitted</span>
-          <span>Manuscript</span>
-        </div>
         <div class="publication-item__body">
           <h3>Robust Latin Hypercube Design for Computer Experiments with Potential Failure Regions</h3>
           <p><strong>Sifan Tao</strong> and Peter Chien</p>
         </div>
+        <div class="publication-item__meta">
+          <span class="publication-status">Submitted</span>
+        </div>
       </article>
 
       <article class="publication-item">
-        <div class="publication-item__meta">
-          <span class="publication-status">Submitted</span>
-          <span>Manuscript</span>
-        </div>
         <div class="publication-item__body">
           <h3>Overlapping Sliced Latin Hypercube Designs for Fusing Multiple Computer Models</h3>
           <p>Xiaoyu Lei*, <strong>Sifan Tao*</strong>, Peter Chien, and Joshua Cape</p>
           <p class="publication-note">* Equal contribution</p>
+        </div>
+        <div class="publication-item__meta">
+          <span class="publication-status">Submitted</span>
         </div>
       </article>
     </div>
